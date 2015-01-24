@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/u-WUoqrET9fUeobQW7jkRT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSha1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzBa1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/EInbV5DfGHOiMmvb1Xr-hha1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
+
+
+#committee
+{
+  text-align: center;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 100px; height: 100px;
+  margin: 10px;
+}
+
+/** Hexagon Mask **/
+figure:before {
+  z-index: 3;
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url(../public/img/contact-bg.png) no-repeat;
+  pointer-events: none;
+}
+figure img {
+  display: block;
+  width: auto; height: 100%;
+}
+
+/** Contact Links **/
+figure .contact_us {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.contact_us a {
+  background-image: url(../public/img/social.png);
+}
+figure .contact_us a {
+  position: absolute;
+  display: block;
+  width: 50%; height: 50%;
+  background-repeat: no-repeat;
+  transition: all .25s ease-in-out;
+}
+
+figure .contact_us .tw {
+    top: 0; left: 0;
+    background-color: rgba(0, 172, 238, .7);
+    background-position: 18px 20px;
+    transform: translate(-100%, -100%);
+  }
+   
+figure .contact_us .tw:hover {
+      background-color: rgba(0, 172, 238, 1);
+    }
+ 
+figure .contact_us .fb {
+    top: 0; right: 0;
+    background-color: rgba(59, 89, 152, .7);
+    background-position: -52px 20px;
+    transform: translate(100%, -100%);
+  }
+    
+figure .contact_us .fb:hover {
+      background-color: rgba(59, 89, 152, 1);
+    }
+
+figure .contact_us .gp {
+    bottom: 0; left: 0;
+    background-color: rgba(221, 75, 57, .7);
+    background-position: 20px -50px;
+    transform: translate(-100%, 100%);
+  }
+    
+figure .contact_us .gp:hover {
+      background-color: rgba(221, 75, 57, 1);
+    }
+  
+figure .contact_us .ma {
+    bottom: 0; right: 0;
+    background-color: rgba(153, 153, 153, .7);
+    background-position: -50px -50px;
+    transform: translate(100%, 100%);
+  }
+    
+figure .contact_us .ma:hover {
+      background-color: rgba(153, 153, 153, 1);
+}
+    
+figure:hover .contact_us a {
+      transform: translate(0, 0);
+}
+
+
+

@@ -1,0 +1,954 @@
+<!--
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>ReSCon 2015</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!--  start-smooth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+                                $(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!-- start-smoth-scrolling-->
+<!-- Custom Theme files -->
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<!-- new added css begin-->
+<link rel="stylesheet" href="css/app.css" media="all">
+<link rel="stylesheet" href="css/css.css" media="all">
+<!-- new added css begin-->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--font-Awesome-->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!--font-Awesome-->
+<!--webfonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+<!--start-top-nav-script-->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!--//End-top-nav-script-->
+</head>
+<body>
+		<!--start-container-->
+			<!--start-header-->
+		<div id="home" class="header">
+			<div class="container">
+				<!-- start-logo-->
+				<div class="logo">
+					<a href="http://gymkhana.iitb.ac.in/~rsc/rescon/"><img src="images/logo1.png" title="IIT Bombay" /></a>
+					
+				</div>
+				<!-- //End-logo-->
+				<!--start-top-nav-->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+                                            <li id="home-nav" class="active" onmouseover="homeMouseOver(this);" onmouseout="homeMouseOut(this);"><a href="#home" style="color:#FD3B01;">Home</a> 
+                                                    <ul id="home-sub-menu" class="sub-menu" style="display: none;">
+                                                        <li><a class="scroll" href="#tech">About</a></li>
+                                                        <li><a class="scroll" href="#Registration">Registration</a></li>
+                                                        <li><a class="scroll" href="#Contact">Contact</a></li>
+                                                       <!-- <li><a class="scroll" href="#FAQ">FAQ</a></li> -->
+                                                        <li><a class="" href="coming-soon.html">FAQ</a></li>
+                                                    </ul>
+                                            </li>
+                                            <li id="programs-nav" class="page-scroll"  onmouseover="homeMouseOver(this);" onmouseout="homeMouseOut(this);"><a href="coming-soon.html">Programs</a>
+                                        <!--  
+						<ul id="programs-sub-menu" class="sub-menu" style="display: none;">
+                                                        <li><a class="" href="coming-soon.html">Themes</a></li>
+                                                        <li><a class="" href="coming-soon.html">Schedule</a></li>
+                                                        <li><a class="" href="coming-soon.html">Talks</a></li>
+                                                        <li><a class="" href="coming-soon.html">Group Discussions</a></li>
+                                                        <li><a class="" href="coming-soon.html">Panel Discussions</a></li>
+                                                </ul>
+					-->
+                                            </li>
+                                            <li id="departments-nav" class="page-scroll" onmouseover="homeMouseOver(this);" onmouseout="homeMouseOut(this);"><a href="coming-soon.html">Departments</a></li>
+                                            <li id="home-nav" class="active"  onmouseover="homeMouseOver(this);" onmouseout="homeMouseOut(this);"><a class="scroll" href="#tech">Organizing Committee</a>
+                                                          <ul id="home-sub-menu" class="sub-menu" style="display: none;">
+                                                        <li><a class="scroll" href="#tech">Technical Team</a></li>
+                                                        <li><a class="scroll" href="#Registration">Design Team</a></li>
+                                                        <li><a class="scroll" href="#Contact">Web DevelopmentTeam</a></li>
+                                                       <!-- <li><a class="scroll" href="#FAQ">FAQ</a></li> -->
+                                                        <li><a class="" href="coming-soon.html">FAQ</a></li>
+                                                    </ul>
+                                            </li>
+                                            <li id="rsas2014-nav" class="page-scroll"  onmouseover="homeMouseOver(this);" onmouseout="homeMouseOut(this);"><a href="http://gymkhana.iitb.ac.in/~rsc/rsas/">RSAS 2014</a></li>
+						<!--<li class="contatct-active page-scroll"><a href="#contact" class="scroll">Contact</a></li>-->
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+                                <!--//End-top-nav-->
+		</div>
+		<div class="slide-text text-center">
+					<h1>ReSCon 2015</h1>
+					<b><span>Research Scholars&apos; Confluence</span></b>
+					<b><span>20<sup>th</sup> & 21<sup>st</sup> March 2015</span></b>
+					<a class="slide-btn scroll" href="#Registration">Register</a>
+				<!--	<a class="slide-btn " href="http://rescon2015.doattend.com/">Register</a> -->
+                </div>
+		</div>
+		<!--//End-header-->
+		<!--start-feartures-->
+		<div id="tech" class="features">
+			<div class="container" id="committee" data-menusnap="true">
+				
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Technical Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Unknown</b></a>
+                        <strong class="in finb">Manager<br>0123456789</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:aasthakapoor2005@gmail.com" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Aastha</b></a>
+                        <strong class="in finb">Joint Manager<br>9769541311</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Rahul</b></a>
+                        <strong class="in finb">Joint Manager<br>9867685716</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Shraddha</b></a>
+                        <strong class="in finb">Organizer<br>7208159252</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">ANEES V P</b></a>
+                        <strong class="in finb">Organizer<br>9967160566</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/shivani.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012ecs15@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Kiran kumar</b></a>
+                        <strong class="in finb">Organizer<br>8897076898</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/bhupendra.JPG">
+                          <div class="contact_us">
+                            <a href="https://twitter.com/bh224164" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/bhupendra.singh.127648?fref=ts" 
+                            target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012eec27@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Atul Kumar</b></a>
+                        <strong class="in finb">Organizer<br>9029151710</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ankur.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="https://www.facebook.com/profile.php?id=100006754869051&fref=ts" 
+                            target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Ritesh Raman</b></a>
+                        <strong class="in finb">Organizer<br>9167820601</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sipika.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="https://www.facebook.com/sipika.garg?fref=ts" target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Pradeep</b></a>
+                        <strong class="in finb">Organizer<br>0123456789</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/nayan.jpeg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="https://www.facebook.com/Nyan.tiwari" target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012ebt02@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Farha</b></a>
+                        <strong class="in finb">Organizer<br>9167925047</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rahul.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2013ebt11@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Anusha Parayil</b></a>
+                        <strong class="in finb">Organizer<br>9167798389</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/parbhat.jpg">
+                          <div class="contact_us">
+                            <a href="http://www.twitter.com/parbhatpuri" target="_blank" class="tw"></a>
+                            <a href="http://www.facebook.com/parbhat.puri" target="_blank" class="fb"></a>
+                            <a href="" target="_blank" class="gp"></a>
+                            <a href="mailto:2012ecs17@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Shivesh</b></a>
+                        <strong class="in finb">Organizer<br>9167649688</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/tp.jpg">
+                          <div class="contact_us">
+                            <a href="" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/tirth.p.bal" target="_blank" class="fb"></a>
+                            <a href="" target="_blank" class="gp"></a>
+                            <a href="mailto:2012ecs22@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sonatan Das</b></a>
+                        <strong class="in finb">Organizer<br>9004543140</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/amandeep.jpg">
+                          <div class="contact_us">
+                            <a href="" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/amandeeptheviper" target="_blank" class="fb"></a>
+                            <a href="" target="_blank" class="gp"></a>
+                            <a href="mailto:2012ecs25@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Maria Thomas</b></a>
+                        <strong class="in finb">Organizer<br>9167798676</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/naval.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="https://www.facebook.com/naval.kumawat.3" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012ecs54@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Meraj Rizvi</b></a>
+                        <strong class="in finb">Organizer<br>0123456789</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/pankaj.jpg">
+                          <div class="contact_us">
+                            <a href="https://twitter.com/pankajpandey890" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/pankajpandey890" target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012eec56@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sudipta Das</b></a>
+                        <strong class="in finb">Organizer<br>9930233008</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ankit.jpg">
+                          <div class="contact_us">
+                            <a href="#" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/ankitsh001" target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012ecs51@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sonali kurkani</b></a>
+                        <strong class="in finb">Organizer<br>0123456789</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/akshay.jpg">
+                          <div class="contact_us">
+                            <a href="#" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/akshay.bhat.31" target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Naveen</b></a>
+                        <strong class="in finb">Organizer<br>9619343393</strong>
+                    </li>
+                </ul>
+                    
+            
+				<!-- //End-features-grids-->
+			</div>
+		</div>
+		<!--//End-feartures-->
+
+
+<!--Register-->
+		<div id="design" class="features">
+      <div class="container" id="committee" data-menusnap="true">
+        
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Design & Publicity Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Rwito</b></a>
+                        <strong class="in finb">Manager<br>8451010295</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:swarkar.sharma@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Shipra</b></a>
+                        <strong class="in finb">Joint Manager<br>9167470286</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sooraj</b></a>
+                        <strong class="in finb">Joint Manager<br>9004401829</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Amit Babu Tare</b></a>
+                        <strong class="in finb">Organizer<br>7738094009</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Anbarasu</b></a>
+                        <strong class="in finb">Organizer<br>9833966225</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/shivani.jpg">
+                          <div class="contact_us">
+                            <a href="" class="tw"></a>
+                            <a href="" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012ecs15@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Srinivas S</b></a>
+                        <strong class="in finb">Organizer<br>9930482439</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/bhupendra.JPG">
+                          <div class="contact_us">
+                            <a href="https://twitter.com/bh224164" target="_blank" class="tw"></a>
+                            <a href="https://www.facebook.com/bhupendra.singh.127648?fref=ts" 
+                            target="_blank" class="fb"></a>
+                            <a href="" class="gp"></a>
+                            <a href="mailto:2012eec27@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sweta</b></a>
+                        <strong class="in finb">Organizer<br>9969682001</strong>
+                    </li>
+                    
+                </ul>
+                    
+            
+        <!-- //End-features-grids-->
+      </div>
+    </div>
+    <!--//End-feartures-->
+
+		<!-- //End-register-->
+
+      <!--start-feartures-->
+    <div id="web" class="features">
+      <div class="container" id="committee" data-menusnap="true">
+        
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Web Development Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Ashok</b></a>
+                        <strong class="in finb">Manager<br>7875593573</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:aasthakapoor2005@gmail.com" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Bhumika</b></a>
+                        <strong class="in finb">Joint Manager<br>9321068060</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Surender</b></a>
+                        <strong class="in finb">Joint Manager<br>0123456789</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Bholonath</b></a>
+                        <strong class="in finb">Organizer<br>9167470095</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Kavya Alse</b></a>
+                        <strong class="in finb">Organizer<br>8879056287</strong>
+                    </li>
+                    
+                </ul>
+                    
+            
+        <!-- //End-features-grids-->
+      </div>
+    </div>
+    <!--//End-feartures-->
+
+    <!-- //End-register-->
+
+      <!--start-feartures-->
+    <div id="logistics" class="features">
+      <div class="container" id="committee" data-menusnap="true">
+        
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Logistics Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Hamidur</b></a>
+                        <strong class="in finb">Manager<br>9833426816</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:aasthakapoor2005@gmail.com" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Pritam</b></a>
+                        <strong class="in finb">Joint Manager<br>9833008191</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sandeep Kumar</b></a>
+                        <strong class="in finb">Joint Manager<br>9820349245</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Prerna</b></a>
+                        <strong class="in finb">Organizer<br>9930497822</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Pankaj</b></a>
+                        <strong class="in finb">Organizer<br>0123456789</strong>
+                    </li>
+                    
+                </ul>
+                    
+            
+        <!-- //End-features-grids-->
+      </div>
+    </div>
+    <!--//End-feartures-->
+
+
+     <!--start-feartures-->
+    <div id="finance" class="features">
+      <div class="container" id="committee" data-menusnap="true">
+        
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Finance Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Dillip Rout</b></a>
+                        <strong class="in finb">Manager<br>9619589827</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:aasthakapoor2005@gmail.com" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">v jagadish</b></a>
+                        <strong class="in finb">Organizer<br>7738272116</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Joshi Ankit</b></a>
+                        <strong class="in finb">Organizer<br>9892917359</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">PRIYABRATA</b></a>
+                        <strong class="in finb">Organizer<br>7738690968</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Nitesh Agrawal</b></a>
+                        <strong class="in finb">Organizer<br>9987216370</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Shashank Tiwari</b></a>
+                        <strong class="in finb">Organizer<br>9769172958</strong>
+                    </li>
+                    
+                </ul>
+                    
+            
+        <!-- //End-features-grids-->
+      </div>
+    </div>
+    <!--//End-feartures-->
+
+
+     <!--start-feartures-->
+    <div id="hospitality" class="features">
+      <div class="container" id="committee" data-menusnap="true">
+        
+                <div class="mhint h"></div>
+
+                <h2 class="in fint">Hospitality Team</h2>
+                <br>
+                <ul>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/rk.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:rakesh.jha@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sandeep</b></a>
+                        <strong class="in finb">Manager<br>9619759355</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sw.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:aasthakapoor2005@gmail.com" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">jagadish</b></a>
+                        <strong class="in finb">Joint Manager<br>9967452352</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/yugal.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="#" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="mailto:yugal@smvdu.ac.in" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Mahak Sapra</b></a>
+                        <strong class="in finb">Organizer<br>9167462695</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/ashish.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/ashishresonance?fref=ts"
+                            target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Harish N</b></a>
+                        <strong class="in finb">Organizer<br>9987048490</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Ravi Kant</b></a>
+                        <strong class="in finb">Organizer<br>9167469075</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Sowmiya</b></a>
+                        <strong class="in finb">Organizer<br>9004004342</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Mohd Zeeshan</b></a>
+                        <strong class="in finb">Organizer<br>8513912452</strong>
+                    </li>
+                    <br>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">SENTHIL KUMAR</b></a>
+                        <strong class="in finb">Organizer<br>9619589796</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Angana Chaudhuri</b></a>
+                        <strong class="in finb">Organizer<br>9833382317</strong>
+                    </li>
+                    <li>
+                        <figure>
+                          <img src="public/img/team/sumit.jpg">
+                          <div class="contact_us">
+                            <a href="#" class="tw"></a>
+                            <a href="https://www.facebook.com/aryan.sumit3" target="_blank" class="fb"></a>
+                            <a href="#" class="gp"></a>
+                            <a href="#" class="ma"></a>
+                          </div>
+                        </figure>
+                        <b class="in finb">Darpan Das</b></a>
+                        <strong class="in finb">Organizer<br>9167349163</strong>
+                    </li>
+                    
+                </ul>
+                    
+            
+        <!-- //End-features-grids-->
+      </div>
+    </div>
+    <!--//End-feartures-->
+
+
+		
+		<!--start-footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					<a href="http://www.iitb.ac.in"><img src="images/footer-logo.png" title="IIT Bombay" /></a>
+					<p style="color:#41484A; font-weight:400" > Developed and Maintained by Ashokkumar and Suren of Web-Team ReSCon 2015</p>
+					
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!--//End-footer-->
+		<!--//End-container-->
+        <script src="js/scripts.js"></script>
+       
+	</body>
+</html>
+
