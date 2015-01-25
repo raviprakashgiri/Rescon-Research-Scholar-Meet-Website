@@ -18,9 +18,9 @@ function homeMouseOver(obj)
     {
        	document.getElementById('home-sub-menu').style.display="block";
     }
-    else if(obj.id==='programs-nav')
+    else if(obj.id==='committee-nav')
     {
-       // document.getElementById('programs-sub-menu').style.display="block";
+        document.getElementById('committee-sub-menu').style.display="block";
     }
         obj.style.backgroundColor="rgba(0, 0, 0, .2)";
 }
@@ -32,9 +32,9 @@ function homeMouseOut(obj)
     {
         document.getElementById('home-sub-menu').style.display="none";
     }
-    else if(obj.id==='programs-nav')
+    else if(obj.id==='committee-nav')
     {
-       // document.getElementById('programs-sub-menu').style.display="none";
+        document.getElementById('committee-sub-menu').style.display="none";
     }
     //document.getElementById('home-nav').style.backgroundColor="rgba(0, 0, 0, .2)";
     //document.getElementById('home-sub-menu').style.display="block";
