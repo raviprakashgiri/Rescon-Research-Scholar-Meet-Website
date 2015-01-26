@@ -12,8 +12,8 @@ body a{
 }
 /*----start-header----*/
 .header{
-	background:url(../images/header-bg.jpg) no-repeat 0px 0px;
-	background-size:100% 100%;
+	/*background:url(../images/header-bg.jpg) no-repeat 0px 0px;
+	background-size:100% 100%;*/
 	min-height:700px;
 }
 .logo{
@@ -101,6 +101,11 @@ nav li {
 
 #programs-sub-menu {
     width: 49%;
+}
+
+#committee-sub-menu{
+    width: 59%;
+    left: 40%;
 }
 
 .sub-menu li a{
@@ -346,10 +351,10 @@ nav a#pull {
 
 /*------start-About ReSCon 2015-----*/
 .features{
-	padding-top:5em;
+	padding-top:0;
 	padding-right: 0;
 	padding-left: 0;
-	padding-bottom: 0;
+	padding-bottom: 5em;
 	
 }
 .head h3{
